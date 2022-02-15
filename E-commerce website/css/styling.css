@@ -1,0 +1,655 @@
+*{
+    padding: 0;  /* remove all intial paddings from page */
+    margin: 0; /* remove all intial margins from page */
+    list-style: none;/* remove all intial bullet point from page */
+    box-sizing: border-box; /*Width and height apply to all parts of the element: content, padding and borders*/
+
+}
+
+
+body{
+background-color: #f2f3f4e8;
+}
+/* -----------------------------------------main nav styling--------------------------------- */
+nav{
+background: #f2f3f4;
+height: 80px;
+display: block; /*remove whitespace underneath*/
+font-family: 'Exo', sans-serif;
+}
+.logo img{
+width: 100px;
+height: 100px;
+}
+
+nav ul{
+float: right; /* float right side of nav*/
+margin-right: 20px; /* push from right */
+}
+nav ul li{
+display: inline-block; /* display list horizontal*/
+line-height: 80px; /*the height the list should occupy*/
+margin: 0 5px; /*width space of list*/
+}
+nav .main-Ul li a{ /*list items */
+color: black; 
+padding: 7px 10px; 
+}
+
+nav .main-Ul a.active{ /*making one item active*/
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+nav .main-Ul a:hover{
+color: #51361a;
+transition: all 0.3s ease;
+}
+.checkbtn{ /*styling for the 3 bars*/
+font-size: 30px;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none; /*dont show bars */
+}
+nav #check{
+display: none; /*dont show box */
+}
+/* -----------------------------------------main nav styling--------------------------------- */
+/* -----------------------------------------main nav MQ-------------------------------- */
+@media (max-width: 952px){
+label.logo{
+    padding-left: 50px;
+}
+}
+@media (max-width: 858px){
+.checkbtn{
+    display: block; /* show bars */
+}
+nav .main-Ul{
+    position: absolute; 
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(195,116,75) ;
+    top: 80px;
+    left: -100%; /* swipes list in screen from left */
+    text-align: center;
+    transition: all .5s; 
+}
+nav .main-Ul li{
+    display: block; /* has it's own block area*/
+    margin: 50px 0; /* h w */
+    line-height: 30px; /* height of the area where list is */
+}
+#check:checked ~ ul{  /* when the box is checked (the bars are clicked)*/
+    left: 0; /* swipes list away from screen from left */
+}
+}
+/* -----------------------------------------main nav MQ--------------------------------- */
+
+/* -----------------------------------------click me styling--------------------------------- */
+.dropbtn {  
+width:80px;
+background-color:#deb887;
+font-family:monospace;
+font-family: 'Exo', sans-serif;
+}
+.dropdown {
+position: absolute;
+z-index: 1; /*infront of everythind*/
+}
+.dropdown-content {
+display: none; /*don't show*/
+position: absolute; /*positioned relative to its parent*/
+background-color: #f1f1f183;
+min-width: 80px; /*same dropbtn*/
+}
+.dropdown-content a {
+padding: 10px;
+font-size: 13px;
+text-decoration: none;/* remove all intial underline from page */
+display: block; /*have individual blocks*/
+color: black;
+text-align: center;
+}
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;/*have individual blocks*/
+}
+/* -----------------------------------------click me styling--------------------------------- */
+
+
+/* ------------------------------------------ Font size  ---------------------------------- */
+/* ------------------ A+'s id clicked alone use main ul to get large font size ------------ */
+ #bigbtn {
+font-size: 30px;
+padding: 7px 10px;
+font-family: 'Exo', sans-serif;
+}
+
+#bigbtn.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+/* ------------------ A-'s id clicked alone use main ul to get small font size ------------ */
+ #smallbtn {
+font-size: 11px;
+padding: 7px 10px;
+font-family: 'Exo', sans-serif;
+}
+#smallbtn.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+/* ------------------ A's id clicked alone use main ul to get norm font size ------------ */
+ #normbtn {
+font-size: 20px;
+padding: 7px 10px;
+font-family: 'Exo', sans-serif;
+}
+#normbtn.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+/* ------------------------------------------ Font size  ---------------------------------- */
+
+
+/* -----------------------------------------night mode--------------------------------- */
+/* -----make the new dark class the same style as main nav----- */
+.darker{
+background-color: #333333; 
+font-family: 'Exo', sans-serif;
+}
+.darker li{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+.darker li a{
+color: white; /* -----colour of nav to white----- */
+padding: 7px 13px; 
+}
+.darker .fa-bars{
+color: white; /* -----bars white in dark mode----- */
+}
+.darker a.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+.darker a:hover{
+color: #ff8b3d;
+transition: all 0.3s ease; /*change smoothly on 0.3s*/
+}
+.darker a.active:hover{
+color: #51361a;
+transition: all 0.3s ease;
+}
+/* -----make the new dark class and A+'s id work when both clicked----- */
+.darker li #bigbtn {
+font-size: 30px;
+padding: 7px 10px;
+}
+.darker #bigbtn.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+/* -----make the new dark class and A-'s id work when both clicked----- */
+.darker li #smallbtn {
+font-size: 11px;
+padding: 7px 10px;
+}
+.darker #smallbtn.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+/* -----make the new dark class and A's id work when both clicked----- */
+.darker li  #normbtn {
+font-size: 20px;
+padding: 7px 10px;
+}
+.darker #normbtn.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+
+/*---------------------------------media query in dark mode -------------------------------*/
+@media (max-width: 858px){
+.darker2 { /* -----make the new darker2 class the same style as main nav media 858px----- */
+background-color: #f2f3f4e8; /* chage bg colour for nicer look */
+position: absolute; 
+z-index: 1;
+width: 100%;
+top: 80px;
+left: -100%;
+text-align: center;
+transition: all .5s;
+font-family: 'Exo', sans-serif;
+}
+.darker2 li{
+display: block;
+margin: 50px 0;
+line-height: 30px;}
+
+.darker2 li a{
+color: #000; 
+}
+.darker2 a.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+padding:7px 13px;
+}
+.darker2  a:hover{
+color: #51361a;
+transition: all 0.3s ease;
+}
+
+}
+/* -----------------------------------------night mode--------------------------------- */
+
+
+/* -----------------------------------------light mode--------------------------------- */
+                                /* overall the light mode is styled like main ul */
+/* -----make the new light class the same style as main nav----- */
+.lighter{
+background-color: #f2f3f4;
+font-family: 'Exo', sans-serif;
+}
+.lighter .fa-bars{
+color: black;
+}
+.lighter li{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+.lighter li a{
+color: black; /* -----colour of nav to black----- */
+padding: 7px 13px; 
+}
+
+.lighter a.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+.lighter  a:hover{
+color: #51361a;
+transition: all 0.3s ease;
+}
+/* -----make the new light class and A+'s id work when both clicked----- */
+.lighter li #bigbtn {
+font-size: 30px;
+padding: 7px 10px;
+}
+.lighter #bigbtn.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+/* -----make the new light class and A-'s id work when both clicked----- */
+.lighter li #smallbtn {
+font-size: 11px;
+padding: 7px 10px;
+}
+.lighter #smallbtn.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+/* -----make the new light class and A's id work when both clicked----- */
+.lighter li  #normbtn {
+font-size: 20px;
+padding: 7px 10px;
+}
+.lighter #normbtn.active{
+background-color:#ff8b3d;
+transition: .5s;
+border-radius: 3px;
+}
+/*---------------------------------media query in light mode -------------------------------*/
+@media (max-width: 858px){
+.lighter2  {/* -----make the new lighter 2 class the same style as main nav media 858px----- */
+position: absolute; 
+z-index: 1;
+width: 100%;
+background-color: rgb(195,116,75) ;/* chage bg colour to look as main ul media query */
+top: 80px;
+left: -100%;
+text-align: center;
+transition: all .5s;
+font-family: 'Exo', sans-serif;
+}
+
+.lighter2 li{
+display: block;
+margin: 50px 0;
+line-height: 30px;}
+
+.lighter2 li a{
+    font-size: 20px;
+    color: #000; 
+}
+.lighter2 a.active{
+    background-color:#ff8b3d;
+    transition: .5s;
+    border-radius: 3px;
+    padding:7px 13px;
+}
+.lighter2  a:hover{
+    color: #51361a;
+    transition: all 0.3s ease;}
+}
+  /* -----------------------------------------light mode--------------------------------- */
+ 
+/* moving footer */
+#movingfooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(246,242,238);
+    padding: 3px;
+    border: 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+}
+/* moving footer ^ */
+
+
+
+/* stionary footer */
+.stationFooter{
+background-color: #cc5500;
+font-family: 'Exo', sans-serif;
+}
+
+.stationFooter .stationFooter-item{
+height: 370px;
+display: flex;
+}
+
+.contact {
+margin-left: 50px; /*middle*/
+}
+.endcontact span{
+display: block;
+font-size: 1.1em;
+margin-bottom: 8px;
+}
+.endsocial a{
+background-color:#ccc;
+color: black;
+width: 45px;
+height: 35px;
+padding-top: 5px;
+margin-right: 5px;
+text-align: center;
+display: inline-block;
+border-radius: 5px;
+}
+.endsocial a:hover{
+border-bottom: 1px solid #ff8b3d;
+color: #ff8b3d;
+transition: all .3s;
+}
+.stationFooter li, a {  /***** all lists in footer ************/
+font-size: 20px;
+text-decoration: none; }
+
+.quickLink ul a li{
+list-style-type: none;
+color: black;
+}
+.quickLink h2{
+margin-left: 95px;
+}
+.quickLink ul a{
+display: block;
+margin-left: 95px;
+transition: all .3s;
+margin-bottom: 20px;
+}
+.quickLink ul a li:hover {
+margin-left: 15px;
+transition: all .2s;
+}
+
+/* stionary footer */
+.darkstationFooter{
+background-color: #333333;
+color: white;
+font-family: 'Exo', sans-serif;
+}
+
+.darkstationFooter .stationFooter-item{
+height: 370px;
+display: flex;
+}
+.darkstationFooter .stationFooter-section{
+flex:1;
+padding:25px;
+}
+
+.darkstationFootercontact {
+margin-left: 50px; /*middle*/
+}
+.darkstationFooter.endcontact span{
+display: block;
+font-size: 1.1em;
+margin-bottom: 8px;
+}
+.darkstationFooter.endsocial a{
+background-color:#ccc;
+color: black;
+width: 45px;
+height: 35px;
+padding-top: 5px;
+margin-right: 5px;
+text-align: center;
+display: inline-block;
+border-radius: 5px;
+}
+.darkstationFooter.endsocial a:hover{
+border-bottom: 1px solid #ff8b3d;
+color: #ff8b3d;
+transition: all .3s;
+}
+.darkstationFooter.stationFooter li, a {  /***** all lists in footer ************/
+font-size: 20px;
+text-decoration: none; }
+
+.darkstationFooter .quickLink ul a li{
+list-style-type: none;
+color:white;
+}
+.darkstationFooter.quickLink h2{
+margin-left: 95px;
+}
+.darkstationFooter.quickLink ul a{
+display: block;
+margin-left: 95px;
+transition: all .3s;
+margin-bottom: 20px;
+}
+.darkstationFooter.quickLink ul a li:hover {
+margin-left: 15px;
+transition: all .2s;
+}
+.lightstationFooter{
+background-color: #cc5500;;
+font-family: 'Exo', sans-serif;
+}
+
+.lightstationFooter .stationFooter-item{
+height: 370px;
+display: flex;
+}
+.lightstationFooter .stationFooter-section{
+flex:1;
+padding:25px;
+}
+
+.lightstationFootercontact {
+margin-left: 50px; /*middle*/
+}
+.lightstationFooter.endcontact span{
+display: block;
+font-size: 1.1em;
+margin-bottom: 8px;
+}
+.lightstationFooter.endsocial a{
+background-color:#ccc;
+color: black;
+width: 45px;
+height: 35px;
+padding-top: 5px;
+margin-right: 5px;
+text-align: center;
+display: inline-block;
+border-radius: 5px;
+}
+.lightstationFooter.endsocial a:hover{
+border-bottom: 1px solid #ff8b3d;
+color: #ff8b3d;
+transition: all .3s;
+}
+.lightstationFooter.stationFooter li, a {  /***** all lists in footer ************/
+font-size: 20px;
+text-decoration: none; }
+
+.lightstationFooter .quickLink ul a li{
+list-style-type: none;
+}
+.lightstationFooter.quickLink h2{
+margin-left: 95px;
+}
+.lightstationFooter.quickLink ul a{
+display: block;
+margin-left: 95px;
+transition: all .3s;
+margin-bottom: 20px;
+}
+.lightstationFooter.quickLink ul a li:hover {
+margin-left: 15px;
+transition: all .2s;
+}
+    
+
+ /********************************/
+
+/* Style inputs */
+input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    min-width:400px}
+  
+input[type=submit] {
+    background-color:#ccc;
+    color: black;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Exo', sans-serif;}
+  
+
+                                     /********************************/
+
+@media screen and (max-width: 960px) {
+
+    .stationFooter{
+        height:auto; /*as much height needed*/
+        font-family: 'Exo', sans-serif;
+    }
+
+    .stationFooter .stationFooter-item{
+        height: auto;
+        flex-direction: column; /*identifing the coumun*/
+    }
+
+    .stationFooter-item .quickLink h2{
+        margin-left: 0px;
+    }
+    .stationFooter-item .quickLink ul a{
+        margin-left: 0px;
+        margin-bottom: 10px;
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ccc;
+
+    }
+    .stationFooter .stationFooter-item .contact {
+        margin-left: 0px; /*middle*/
+    }
+
+    /*dark mode media query */
+
+    .darkstationFooter{
+        height:auto; /*as much height needed*/
+        font-family: 'Exo', sans-serif;
+    }
+
+    .darkstationFooter .stationFooter-item{
+        height: auto;
+        flex-direction: column;
+    }
+
+    
+    .darkstationFooter.stationFooter-item .quickLink h2{
+        margin-left: 0px;
+    }
+    .darkstationFooter.stationFooter-item .quickLink ul a{
+        margin-left: 0px;
+        margin-bottom: 10px;
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ccc;
+        color:white;
+
+    }
+    .darkstationFooter .stationFooter-item .contact {
+        margin-left: 0px; /*middle*/
+    }
+
+      /*light mode media query */
+      
+    .lightstationFooter{
+        height:auto; /*as much height needed*/
+        font-family: 'Exo', sans-serif;
+    }
+
+    .lightstationFooter .stationFooter-item{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .lightstationFooter .stationFooter-item .quickLink h2{
+        margin-left: 0px;
+    }
+    .lightstationFooter .stationFooter-item .quickLink ul a{
+        margin-left: 0px;
+        margin-bottom: 10px;
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ccc;
+
+    }
+    .lightstationFooter .stationFooter-item .contact {
+        margin-left: 0px; /*middle*/
+    }
+}
+

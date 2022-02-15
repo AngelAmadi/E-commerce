@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Juice website</title>
+      <link rel="stylesheet" href="css/styling.css">
+      <link rel="stylesheet" href="css/contact.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!--bars icon-->
+      <link  rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icons-->
+      <script src= "js/main.js" defer ></script> 
+        <script src = "js/contact.js" defer ></script>
+  </head>
+<body>
+    <nav >
+      <input type="checkbox" id="check"> <!--we need a checkbox -->
+      <label for="check" class="checkbtn"> <!--we need a check for checkbox  -->
+        <i class="fas fa-bars"></i>
+      </label>
+      <i class="logo"><img src = "images/logofinal.png" alt = "logo"> </i>
+      <ul class = main-Ul>
+        <li><a href="Myhome.html">Home</a></li>
+        <li><a href="AboutUs.html">About</a></li>
+        <li><a href="Learn.html">Learn More</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a class="active" href="shop.html">SHOP</a></li> 
+      </ul>
+    </nav> 
+
+    <section class="dropdown">
+        <button class="dropbtn"style="font-family:monospace">Click me<i class="fa fa-caret-down"></i></button>
+        <section class="dropdown-content">
+            <ul >
+                <a href="#" class="fontInc" > A +</a>
+                <a href="#" class="fontNom" > A  </a>
+                <a href="#" class="fontDec" > A -</a>
+                <a href="#" class="dark" id="dark"><span class="fa fa-moon-o"></span></a>
+                <a href="#" class="light" id="light"><span class="fa fa-sun-o"></span></a>
+            </ul>
+          </section>
+      </section>
+
+ 
+  
+<section class="contactus">
+
+     
+            <section class="info">
+
+                <section class="box">
+                    <section class="icon"> <i class="fa fa-map-marker"></i> </section>
+                    <section class="texticon">
+                      <br><h2>Head Office</h2>
+                        <p> RADFORD NG1 333<br>nottigham<br>colwick</p> <br>
+                    </section>
+                </section>
+
+                <section class="box">
+                  <section class="icon"> <i class="fa fa-map-marker"> </i> </section>
+                  <section class="texticon">
+                    <h2>LOCATION IN THE UK </h2>
+                      <p> <u>+44717711771 RADFORD NG1 333</u><br></p>
+                      <p> <u>+44888899771 SAFFORD EW1 EEE</u><br></p>
+                      <p> <u>+44114433442 DRY ST1 111</u><br></p>
+                      <p> <u>+44949943722 SYS TE1 000</u><br></p>
+                      <p> <u>+44636362363 WAY E7 0DP</u><br><br></p>
+                  </section>
+              </section>
+
+              <section class="box">
+                <section class="icon"> <i class="fa fa-clock"></i></section>
+                <section class="texticon">
+                  <h2>RESTAURANT HOURS</h2>
+                  <p><b>Monday    :    10:00 am - 12:00 am</b> </p>
+                  <p><b>Tuesday   :    10:00 am - 12:00 am</b></p>
+                  <p><b>Wednesday :    10:00 am - 12:00 am</b></p>
+                  <p><b>Thursday  :    10:00 am - 12:00 am</b></p>
+                  <p><b>Friday    :    10:00 am - 12:00 am</b></p>
+                  <p><b>Saturday  :    Closed</b></p>
+                  <p><b>Sunday    :    Closed </b></p> <br><br>
+                </section>
+             </section>
+              
+            </section>
+
+            <section class="info">
+              <form class="info-conatact" id="formID" method="POST" action="#" >
+                
+                  <h2>Contact Us</h2>
+                  <p>Name*</p>
+                  <input placeholder = "type your name:" type="text"  id="name" pattern="[A-Za-z\s]{0,50}" required title="Enter Alphabet Characters Only"><br>
+                  <p>Email *</p>
+                  <input id="emailAddress" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" type="email" name="email" placeholder="type your email.."required >
+                   <p>Subject *</p>
+                  <input  type="text" maxlength="100" placeholder="subject.."required>
+                  <p>Phone *</p>
+                  <input id="phone" type="text" pattern="[0]{1}[0-9]{10}" required title="Format: 07940455701 "  placeholder="Format: 07940455701 ">
+                  <p>Message *</p>
+                  <textarea maxlength="1000"required placeholder="type here.." ></textarea>
+                  <input type="submit" value="Submit">
+              
+              </form>
+             
+            </section>
+
+</section>
+
+      
+   
+ <!-- sationary footer -->
+ <footer class = "stationFooter">  <!-- class for sationary footer container-->
+  <section class ="stationFooter-item"> <!-- class for sationary footer -->
+
+    <!--  left side of footer-->   
+  <article class ="stationFooter-section about"> <!-- class for left side-->
+
+  <h2> <u>What we do?</u> <br> <br></h2>
+
+  <p> We specilize in making juice that feel like a breath for fresh air.
+    This company has been running for 4 years, with our juices being number 1 against our competitors. Our easy to use website 
+    allows you purchase you preferred juice and immediately, you receieve a confirmation of your item being bought. Be sure to key in your email in the newletter section for didcounts too. Thanks for trusting us! <br></p>
+
+
+  <figure class="endcontact">
+  <span><i class="fa fa-phone"></i> 07940455704 </span>
+  <span><i class="fa fa-envelope"></i>  grubstation@gmail.com </span>
+  </figure>
+
+  </article>
+  <!--  left side of footer ^ --> 
+
+  <!--  middle side of footer --> 
+  <section class ="stationFooter-section contact">
+  <h2><u>Newsletter</u></h2>
+  <br> Get recipes, news & offers
+  <form id= "formM" method="POST" action="#" >
+  <label>
+  <input id="emailAddress" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" type="email" name="email" placeholder="type your email.."required >
+  <input type="submit" value="Submit">
+  </label> 
+
+  </form>
+  <figure class ="endsocial"> <br><h2>Follow us on our social media</h2><br>
+  <a href="https://www.instagram.com/" target = "_blank" ><i class="fa fa-instagram" ></i> </a>
+  <a href="https://www.youtube.com/" target = "_blank"><i class="fa fa-youtube-play" ></i> </a>
+  <a href="https://twitter.com/search?q=klekt%20bad&src=typed_query&f=top" target = "_blank"><i class="fa fa-twitter" ></i> </a>
+  <a href="https://www.facebook.com/" target = "_blank"><i class="fa fa-facebook-square" ></i> </a>
+  </figure>
+  </section>
+    <!--  middle side of footer ^ --> 
+
+    <!--  right side of footer --> 
+  <section class ="stationFooter-section quickLink">
+  <h2> <u>Quick Links </u></h2>
+  <br>
+  <ul>
+  <a href ="Myhome.html"><li>Home</li></a>
+  <a href ="AboutUs.html"><li>About</li></a>
+  <a href ="Learn.html"><li>Learn More</li></a>
+  <a href ="Contact.html"><li>Contact</li></a>
+  </ul>
+  </section>
+      <!--  right side of footer ^--> 
+  </section>
+  </footer>
+        <!-- end sationary footer -->
+
+
+
+  <footer id="movingfooter" >
+  &#169; <!---html code for copyright-->Grub Station, Inc. All rights reserved
+  </footer>
+</body>
+</HTML>

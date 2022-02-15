@@ -1,0 +1,164 @@
+*{
+    font-family: 'Exo', sans-serif;
+    
+  
+  }
+.gallery {
+border: 1px solid #ccc; /*border around picture */
+}
+
+.gallery:hover {
+border: 1px solid #777; /*border around hover */
+}
+
+.gallery img {
+width: 100%; /* used percentage for the image */
+height: auto; /* for better quality use automatic height */
+}
+
+.desc {
+padding: 15px; /* space around by 15px */
+text-align: center; /* text centre  */
+}
+.picSec { /*the picture column from the media row  */
+    padding: 0 6px; /* horizontal, vertical*/ 
+    float: left; /* move left  */
+    width: 50%; 
+    margin-top: 10px;
+  }
+  
+@media only screen and (max-width: 700px) {
+    .picSec {
+      margin: 6px 0;
+    }
+    video{
+        width: 100%;
+    }
+  }
+  
+@media only screen and (max-width: 500px) {
+    .picSec {
+      width: 100%;
+    }
+    video{
+        width: 100%;
+    }
+}
+  
+
+  
+.cartSection {
+    padding: 30px 30px;
+}
+
+.buy { /*buy button*/
+    display: block; /*has it owns block */
+    cursor: pointer; /* mouse */
+    color: #ff8b3d;
+    background-color: #51361a;
+    border: none;
+    border-radius: .3em; /*rounded  */
+    font-weight: bold; /* exaggerate*/
+    padding: 10px;
+    
+}
+
+.cartTitles  { /* item price quatity   */
+    font-weight: bold;
+    font-size: 20px
+}
+
+.PurchaseCell { /* shared cell name for the designing the strip*/
+    display: flex; 
+    align-items: center;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.PurchaseRow {
+    display: flex; 
+}
+
+.product{
+    width: 40%; /*the first cell*/
+}
+
+.Productprice{
+    width: 30%; /*the middle cell*/
+    font-size: 20px; /*put the same as other titles)*/
+}
+
+.Userquantity {
+    width: 30%; /*the last cell*/
+    margin: 10px 0px 0px 0px;
+}
+
+.Product-Title { /*title eg dragon fruit */
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.Userquantity-input {
+    height: 24px;
+    width: 40px;
+    border-radius: 3px;
+    background-color: #ddd;
+    font-size: 18px;
+    
+}
+
+.totalTitle {
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.totalPrice {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+#formName{
+    margin-top: 20px;
+    background-color: grey;
+    height: 150px;
+    width: 200px;  
+    display:none;
+    border-radius: .3em;
+  padding: 10px;
+}
+
+
+video{
+    width: 700px;
+    display: block;
+    margin-left: 350px;
+    border-radius:5px;
+
+}
+.fruitvid{
+    background-color:#fdeccf;
+}
+
+
+
+    
+    
+@media screen and (max-width: 1405px) {
+video{
+    width: 500px;
+    }
+}
+
+
+    
+@media screen and (max-width: 826px) {
+video{
+    width: 100%;
+    margin-left: 0px;
+}
+        
+}

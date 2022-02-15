@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" > 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Tells the page to follow screen width of device -->
+    <title>Juice website</title>
+    <link rel="stylesheet" href="css/MyhomeCSS.css">
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!--bars icon-->
+    <link  rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icons-->
+    
+    <script src= "js/main.js"defer></script> <!--defer means js is passed after page loads -->
+  </head>
+<body>
+  <nav >
+    <input type="checkbox" id="check"> <!--we need a checkbox -->
+
+    <label for="check" class="checkbtn"> <!--we need a tick for checkbox  -->
+      <i class="fas fa-bars"></i> <!--icons -->
+
+    </label>
+    
+    <i class="logo"><img src = "images/logofinal.png" alt = "logo"> </i>
+    <ul class = main-Ul>
+    <li><a href="Myhome.html">Home</a></li>
+    <li><a href="AboutUs.html">About</a></li>
+    <li><a href="Learn.html">Learn More</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a class="active" href="shop.html">SHOP</a></li> 
+    </ul>
+  </nav>
+
+  <section class="dropdown"> <!--menu for user to alter items on page -->
+    <button class="dropbtn">Click me<i class="fa fa-caret-down"></i></button>
+      <section class="dropdown-content">
+        <ul >
+        <a href="#" class="fontInc" > A +</a>
+        <a href="#" class="fontNom" > A  </a>
+        <a href="#" class="fontDec" > A -</a>
+        <a href="#" class="dark" id="dark"><span class="fa fa-moon-o"></span></a>
+        <a href="#" class="light" id="light"><span class="fa fa-sun-o"></span></a>
+        </ul>
+      </section>
+  </section>
+
+
+<section>
+  <!-- Full images with numbers and message Info -->
+  <figure class="mySlides"> 
+    <figcaption class ="text"> <!--class text here is for slideshow text, when styled speified with parent-->
+    <h1 class="juicebar"> GRUB STATION</h1>
+    <p class ="slogan"> A breath of fresh air </p>
+    <a class="heroBtn" href="shop.html">  CLICK HERE </a> </figcaption> 
+    <img src="images/orange.jpg" class= "myslide-img" alt=" Our juices slideshow">  
+  </figure>  
+
+  <a class="batter prev" >&#8249;</a>
+  <a class="batter next " >&#8250;</a>
+</section>
+
+<!-- location section -->
+<article class= "sectionTwo" >  <!--independent semantic element -->
+  <section class="text"> <!--class text here is for slideshow text, when styled speified with parent-->
+  <h1>DON'T KNOW WHERE TO FIND US ?</h1>
+  <p>For hours and location </p> <br>
+  <a href="Contact.html"> Locate here </a>
+
+  </section>
+</article>
+
+            
+<section id = "reviews"> <!--I decided have a section for the reviews -->
+    <section class = "reviews-box-container"> <!-- and a container to style  -->
+
+        <!--box 1 start -->
+        <section class="reviews-box"> <!-- each reviews has a section -->
+
+          <aside class="boxtop"> <!--containing the profile items -->
+            <section class="profile">
+              <section class="profile-img">
+                  <img src = "images/female.png" alt="female icon">
+              </section>
+
+              <section class= "username">
+                <strong>Anonymous</strong>
+                <span>--</span>
+              </section>
+            </section>
+
+              <section class="testiomals"> <!--for my stars-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                
+              </section>
+          </aside >
+
+          <aside class = "client-comment"> <!-- for the testimonal text -->
+             <p>  The website is so easy to navigate. I love the juices so much and will be buying some for my entire family. Thank you ! </p>
+          </aside>
+          
+        </section>   <!--box 1 end -->
+
+          <!--box 2 start -->
+          <section class="reviews-box">
+
+            <aside class="boxtop">
+
+              <section class="profile">
+                <section class="profile-img">
+                  <img src = "images/male.png" alt="male icon">
+                </section>
+                <section class= "username">
+                  <strong>John Keary</strong>
+                  <span>Jon@media.com</span>
+                </section>
+              </section>
+
+              <section class="testiomals">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </section>
+            </aside >
+            <aside class = "client-comment">
+            <p>  Wow I have never tasted anything like it. It is definetly a 10/10. Open all week! </p>
+            </aside>
+          </section>   <!--box 2 end -->
+
+          <!--box 3 start -->
+          <section class="reviews-box">
+
+            <aside class="boxtop">
+
+              <section class="profile">
+                <section class="profile-img">
+                  <img src = "images/male.png" alt="male icon">
+                </section>
+
+                <section class= "username">
+                  <strong>Ben Johnson</strong>
+                  <span>Ben@yahoo.com</span>
+                </section>
+              </section>
+
+              <section class="testiomals">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-full"></i>
+              </section>
+
+            </aside >
+
+            <aside class = "client-comment">
+               <p>  My daughters love the beetroot. I really helps with cramps. I suggest you try it</p>
+            </aside>
+
+          </section>  <!--box 3 end -->
+
+          <!--box 4 start -->
+          <section class="reviews-box">
+
+            <aside class="boxtop">
+
+              <section class="profile">
+                <section class="profile-img">
+                   <img src = "images/female.png" alt="female icon">
+                </section>
+
+                <section class= "username">
+                  <strong>Edwina May</strong>
+                  <span>MayEd@gmail.com</span>
+                </section>
+              </section>
+
+              <section class="testiomals">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-full"></i>
+              </section>
+
+            </aside >
+
+            <aside class = "client-comment">
+               <p>  I have been loving the newletters report, very interesting. Lovely drinks too! </p>
+            </aside>
+
+          </section>  <!--box 4 end -->
+
+    </section>
+</section>
+
+  <!-- sationary footer -->
+  <footer class = "stationFooter">  <!-- class for sationary footer container-->
+  <section class ="stationFooter-item"> <!-- class for sationary footer -->
+
+    <!--  left side of footer-->   
+  <article class ="stationFooter-section about"> <!-- class for left side-->
+
+  <h2> <u>What we do?</u> <br> <br></h2>
+
+  <p> We specilize in making juice that feel like a breath for fresh air.
+    This company has been running for 4 years, with our juices being number 1 against our competitors. Our easy to use website 
+    allows you purchase you preferred juice and immediately, you receieve a confirmation of your item being bought. Be sure to key in your email in the newletter section for didcounts too. Thanks for trusting us! <br></p>
+
+
+  <figure class="endcontact">
+  <span><i class="fa fa-phone"></i> 07940455704 </span>
+  <span><i class="fa fa-envelope"></i>  grubstation@gmail.com </span>
+  </figure>
+
+  </article>
+  <!--  left side of footer ^ --> 
+
+  <!--  middle side of footer --> 
+  <section class ="stationFooter-section contact">
+  <h2><u>Newsletter</u></h2>
+  <br> Get recipes, news & offers
+  <form id= "formM" method="POST" action="#" >
+  <label>
+  <input id="emailAddress" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" type="email" name="email" placeholder="type your email.."required >
+  <input type="submit" value="Submit">
+  </label> 
+
+  </form>
+  <figure class ="endsocial"> <br><h2>Follow us on our social media</h2><br>
+  <a href="https://www.instagram.com/" target = "_blank" ><i class="fa fa-instagram" ></i> </a>
+  <a href="https://www.youtube.com/" target = "_blank"><i class="fa fa-youtube-play" ></i> </a>
+  <a href="https://twitter.com/search?q=klekt%20bad&src=typed_query&f=top" target = "_blank"><i class="fa fa-twitter" ></i> </a>
+  <a href="https://www.facebook.com/" target = "_blank"><i class="fa fa-facebook-square" ></i> </a>
+  </figure>
+  </section>
+    <!--  middle side of footer ^ --> 
+
+    <!--  right side of footer --> 
+  <section class ="stationFooter-section quickLink">
+  <h2> <u>Quick Links </u></h2>
+  <br>
+  <ul>
+  <a href ="Myhome.html"><li>Home</li></a>
+  <a href ="AboutUs.html"><li>About</li></a>
+  <a href ="Learn.html"><li>Learn More</li></a>
+  <a href ="Contact.html"><li>Contact</li></a>
+  </ul>
+  </section>
+      <!--  right side of footer ^--> 
+  </section>
+  </footer>
+        <!-- end sationary footer -->
+
+
+
+  <footer id="movingfooter" >
+  &#169; <!---html code for copyright-->Grub Station, Inc. All rights reserved
+  </footer>
+</body>
+</HTML>

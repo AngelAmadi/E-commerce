@@ -1,0 +1,176 @@
+*{
+    font-family: 'Exo', sans-serif;
+  
+  }
+.learnbody { /*body of text*/
+   margin: 50px;
+}
+.learnbody h3{ /*first title*/
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+}
+.learnbody  h2{ /*Second title */
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+.graph {
+   padding: 40px;
+}
+
+.graph .block {
+    color:#333333;
+    font-size:20px;
+    padding:3px  ;
+    margin-top: 10px;
+}
+.first{
+   width:60%;
+   background:#ffc47a;
+}
+
+.second{
+    width:70%;
+    background:#ffb971;
+}
+.third{
+    width:80%;
+    background:#ffa850;
+}
+.fourth{
+    width:90%;
+    background:#ff9325;
+}
+.graph:hover {
+    transition-duration: 3s;
+    transform: scale(1.1) ; 
+}
+
+.titleC{
+    text-align: center;
+    margin-right: 200px;
+}
+
+.animated img{
+width: 250px;
+margin-left: 450px;
+}
+
+
+#mybutton{
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    background:grey;
+    width :20px;
+}
+
+
+.POPsample {
+display: flex; /*colum*/
+align-items: center;
+justify-content: center
+}
+
+.POPsample-img img {
+max-width: 300px;
+height: 400px;
+border: 3px solid black;
+border-radius:3px;
+box-shadow: 2px 2px 40px rgba(0,0,0,0.3);
+
+}
+
+.POPsample-img {
+flex-basis: 40%;
+}
+
+.POPsample-text {
+font-size: 13px;
+max-width: 300px;
+}
+
+
+#Ingredients{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-color:#fdeccf;
+border-radius:10px;
+
+}
+.Ingredients-container{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+}
+.Ingredients-item{
+width: 45%;
+padding:20px;
+margin:15px;
+
+}
+
+
+@media screen and (max-width: 1060px) {
+.Ingredients-item{
+width: 45%;
+padding: 10px;
+
+}
+.POPsample-img img {
+    width: 350px;
+}
+
+
+}
+
+
+@media screen and (max-width: 1405px) {
+.animated img{
+width: 300px;
+
+margin-left: 450px;
+}
+
+.titleC{
+    text-align: center;
+    margin-right: 0px;
+}
+
+        }
+@media screen and (max-width: 1344px) {
+.animated img{
+width: 300px;
+
+margin-left: 0px;
+}
+.titleC{
+    text-align: center;
+    margin-right: 0px;
+}
+
+        
+}
+
+
+@media screen and (max-width: 826px) {
+.Ingredients-item{
+    width: 100%;
+    }
+.titleC{
+    text-align: center;
+    margin-right: 0px;
+}
+
+        
+}
+
+
+
+

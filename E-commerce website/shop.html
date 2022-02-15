@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" > 
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juice website</title>
+        <link rel="stylesheet" href="css/styling.css">
+        <link rel="stylesheet" href="css/shop.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!--bars icon-->
+        <link  rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icons-->
+        <script src= "js/main.js" defer ></script> 
+        <script src = "js/shop.js" defer ></script> 
+    </head>
+  
+    <body>
+    <nav >
+      <input type="checkbox" id="check"> <!--we need a checkbox -->
+      <label for="check" class="checkbtn"> <!--we need a check for checkbox  -->
+        <i class="fas fa-bars"></i>
+      </label>
+      <i class="logo"><img src = "images/logofinal.png" alt = "logo"> </i>
+      <ul class = main-Ul>
+        <li><a href="Myhome.html">Home</a></li>
+        <li><a href="AboutUs.html">About</a></li>
+        <li><a href="Learn.html">Learn More</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a class="active" href="shop.html">SHOP</a></li> 
+      </ul>
+    </nav>
+
+    <section class="dropdown">
+        <button class="dropbtn"style="font-family:monospace">Click me<i class="fa fa-caret-down"></i></button>
+        <section class="dropdown-content">
+            <ul >
+                <a href="#" class="fontInc" > A +</a>
+                <a href="#" class="fontNom" > A  </a>
+                <a href="#" class="fontDec" > A -</a>
+                <a href="#" class="dark" id="dark"><span class="fa fa-moon-o"></span></a>
+                <a href="#" class="light" id="light"><span class="fa fa-sun-o"></span></a>
+            </ul>
+          </section>
+      </section>
+
+       <!---------------------------------------------------Here is the series of pictures to buy ---------------------------------------------------- -->
+
+  <section class = media >
+
+    <section class="fruitvid" >
+      
+      <video controls alt="A video of me in the middle of the meeting"  > Video not supported  
+        <source src="../E-commerce website /images/videoplayback.mp4" type="video/mp4">
+      </video> 
+     </section>
+
+
+      <section class="picSec">
+        <figure class= "gallery">
+          <p><img src="images/dragonfruit.jpg"
+            alt="A picture of our dragon fruit drink " > 
+          <figcaption class="desc">Dragon fruit</figcaption>
+        </figure>
+      </section>
+
+      <section class="picSec">
+        <figure class= "gallery">
+          <p><img src="images/berries.jpg" 
+            alt="Berry Mix">
+          <figcaption class="desc"> Berry Mix </figcaption>
+        </figure>
+      </section>
+
+      <section class="picSec">
+        <figure class= "gallery">
+          <p><img src="images/orangebottle.jpg" 
+            alt="Orange Mix">
+          <figcaption class="desc">Sunshine drink</figcaption>
+        </figure>
+      </section>
+
+      <section class="picSec">
+        <figure class= "gallery">
+          <p><img src="images/example.jpg" alt="Our special other drinks ">
+          <figcaption class="desc">Special Other</figcaption>
+        </figure>
+      </section>
+
+   </section>
+ 
+     <!---------------------------------------------------Here is the cart section  ---------------------------------------------------- -->
+  
+   <section class="cartSection">
+           
+    <h2 >Order here </h2>
+        <section class="PurchaseRow"> <!-- container for items -->
+            <aside class="product cartTitles PurchaseCell">ITEM</aside> <!-- individual cell : title :shared cell   -->
+            <aside class="Productprice cartTitles PurchaseCell">PRICE</aside>  <!-- individual cell  : title :shared cell -->
+            <aside class="Userquantity cartTitles  PurchaseCell">QUANTITY</aside>  <!-- individual cell  : title :shared cell -->
+        </section>
+
+        <section class="products">  <!-- overall products container -->
+                      
+
+
+            <section class="PurchaseRow">  <!-- overall row -->
+
+              <!-- cell class and  shared cell class name-->
+              <article class="product PurchaseCell"> 
+                  <p class="Product-Title">Dragon Fruit <br> <!-- PRODUCT NAME-->
+                    <i> Ingrdients : (Dragon Fruit + ginger )</i>
+                  </p>
+              </article>
+              <span class="Productprice PurchaseCell">&#163; 10</span> <!-- my set price selected which uses PurchaseColumn(Named quantity) (so i selected it )-->
+              <section class="Userquantity PurchaseCell"> <!-- amount of product from PurchaseColumn(Named quantity)-->
+                  <input class="Userquantity-input" type="number" value="1"> <!--input quantity-->
+
+              </section>
+          </section>
+
+
+            <section class="PurchaseRow"> <!-- overall row -->
+
+              <!-- cell class and  shared cell class name-->
+                <article class="product PurchaseCell">
+                    <p class="Product-Title">Berry Mix <br><!-- PRODUCT NAME-->
+                      <i> Ingrdients : (Strawbeery + blueberry )</i>
+                    </p>
+                </article>
+                <span class="Productprice PurchaseCell">&#163; 10</span><!-- my set price selected which uses PurchaseColumn(Named quantity) (so i selected it )-->
+                <section class="Userquantity PurchaseCell"><!-- amount of product from PurchaseColumn(Named quantity)-->
+                    <input class="Userquantity-input" type="number" value="1">
+                    
+                </section>
+              </section>
+
+              <section class="PurchaseRow"><!-- overall row -->
+
+                <!-- cell class and  shared cell class name-->
+                <article class="product PurchaseCell"> 
+                    <p class="Product-Title">Sunshine <br><!-- PRODUCT NAME-->
+                      <i> Ingrdients : (Orange )</i>
+                    </p>
+                </article>
+                <span class="Productprice PurchaseCell">&#163; 5</span>
+                <section class="Userquantity PurchaseCell">
+                    <input class="Userquantity-input" type="number" value="1">
+                    
+                </section>
+              </section>
+
+              <section class="PurchaseRow"><!-- horizontal row for the items -->
+                <!-- overall row -->
+
+              <!-- cell class and  shared cell class name-->
+                <article class="product PurchaseCell"> 
+                    <p class="Product-Title">Smiley <br><!-- PRODUCT NAME-->
+                      <i> Ingrdients : ( Pineapple + ginger +lemon <br> honey + Coconut water )</i>
+                    </p>
+                </article>
+                <span class="Productprice PurchaseCell">&#163; 15</span><!-- my set price selected which uses PurchaseColumn(Named quantity) (so i selected it )-->
+                <section class="Userquantity PurchaseCell"><!-- amount of product from PurchaseColumn(Named quantity)-->
+                    <input class="Userquantity-input" type="number" value="1">
+                    
+                </section>
+              </section>
+
+
+              <section class="PurchaseRow"><!-- overall row -->
+
+                <!-- cell class and  shared cell class name-->
+                <article class="product PurchaseCell">
+                    <p class="Product-Title">Bee ME <br><!-- PRODUCT NAME-->
+                      <i> Ingrdients : ( Pineapple + ginger + Beetroot)</i>
+                    </p>
+                </article>
+                <span class="Productprice PurchaseCell">&#163; 15</span><!-- my set price selected which uses PurchaseColumn(Named quantity) (so i selected it )-->
+                <section class="Userquantity PurchaseCell"><!-- amount of product from PurchaseColumn(Named quantity)-->
+                    <input class="Userquantity-input" type="number" value="1">
+                    
+                </section>
+              </section>
+
+
+              <section class="PurchaseRow"><!-- overall row -->
+
+                <!-- cell class and  shared cell class name-->
+                <article class="product PurchaseCell">
+                    <p class="Product-Title">Citrus Sunset <br><!-- PRODUCT NAME-->
+                      <i> Ingrdients : ( Grapefruit + Orange + Carrot <br> Lemon + Lime )</i>
+                    </p>
+                </article>
+                <span class="Productprice PurchaseCell">&#163; 15</span><!-- my set price selected which uses PurchaseColumn(Named quantity) (so i selected it )-->
+                <section class="Userquantity PurchaseCell"><!-- amount of product from PurchaseColumn(Named quantity)-->
+                    <input class="Userquantity-input" type="number" value="1">
+                    
+                </section>
+              </section>
+
+
+              <section class="PurchaseRow"><!-- overall row -->
+
+                <!-- cell class and  shared cell class name-->
+                <article class="product PurchaseCell">
+                    <p class="Product-Title">Bluto <br><!-- PRODUCT NAME-->
+                      <i> Ingrdients : ( Kale + Celery + Apple <br> ginger + Lemon )</i>
+                    </p>
+                </article>
+                <span class="Productprice PurchaseCell">&#163; 15</span><!-- my set price selected which uses PurchaseColumn(Named quantity) (so i selected it )-->
+                <section class="Userquantity PurchaseCell"><!-- amount of product from PurchaseColumn(Named quantity)-->
+                    <input class="Userquantity-input" type="number" value="1">
+                    
+                </section>
+              </section>
+
+        </section>
+
+        <section >
+            <strong class="totalTitle">Total</strong>
+            <span class="totalPrice">£ 85 </span>
+        </section>
+
+        
+     
+      <button id = "buyy" class="buy">PURCHASE</button>
+
+      <section id="formName">
+         <form  id="formID" method="POST" action="#" > <!-- hide from url, front-end so no where to send data  -->
+            <label>
+              <input placeholder = "type your first name:" type="text"  id="firstname" pattern="[A-Za-z\s]{0,50}" required title="Enter Alphabet Characters Only"><br><br>
+              <input placeholder = "type your last name:"type="text"   pattern="[A-Za-z\s]{0,50}" required title="Enter Alphabet Characters Only"><br><br>
+              <input  title="UK POSTCODE ONLY"placeholder="POSTCODE" pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}" required ></input>
+               <input type="submit" value="Submit">
+           </label>
+        </form> 
+      </section>
+
+  </section>
+
+           
+ <!-- sationary footer -->
+ <footer class = "stationFooter">  <!-- class for sationary footer container-->
+  <section class ="stationFooter-item"> <!-- class for sationary footer -->
+
+    <!--  left side of footer-->   
+  <article class ="stationFooter-section about"> <!-- class for left side-->
+
+  <h2> <u>What we do?</u> <br> <br></h2>
+
+  <p> We specilize in making juice that feel like a breath for fresh air.
+    This company has been running for 4 years, with our juices being number 1 against our competitors. Our easy to use website 
+    allows you purchase you preferred juice and immediately, you receieve a confirmation of your item being bought. Be sure to key in your email in the newletter section for didcounts too. Thanks for trusting us! <br></p>
+
+
+  <figure class="endcontact">
+  <span><i class="fa fa-phone"></i> 07940455704 </span>
+  <span><i class="fa fa-envelope"></i>  grubstation@gmail.com </span>
+  </figure>
+
+  </article>
+  <!--  left side of footer ^ --> 
+
+  <!--  middle side of footer --> 
+  <section class ="stationFooter-section contact">
+  <h2><u>Newsletter</u></h2>
+  <br> Get recipes, news & offers
+  <form id= "formM" method="POST" action="#" >
+  <label>
+  <input id="emailAddress" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" type="email" name="email" placeholder="type your email.."required >
+  <input type="submit" value="Submit">
+  </label> 
+
+  </form>
+  <figure class ="endsocial"> <br><h2>Follow us on our social media</h2><br>
+  <a href="https://www.instagram.com/" target = "_blank" ><i class="fa fa-instagram" ></i> </a>
+  <a href="https://www.youtube.com/" target = "_blank"><i class="fa fa-youtube-play" ></i> </a>
+  <a href="https://twitter.com/search?q=klekt%20bad&src=typed_query&f=top" target = "_blank"><i class="fa fa-twitter" ></i> </a>
+  <a href="https://www.facebook.com/" target = "_blank"><i class="fa fa-facebook-square" ></i> </a>
+  </figure>
+  </section>
+    <!--  middle side of footer ^ --> 
+
+    <!--  right side of footer --> 
+  <section class ="stationFooter-section quickLink">
+  <h2> <u>Quick Links </u></h2>
+  <br>
+  <ul>
+  <a href ="Myhome.html"><li>Home</li></a>
+  <a href ="AboutUs.html"><li>About</li></a>
+  <a href ="Learn.html"><li>Learn More</li></a>
+  <a href ="Contact.html"><li>Contact</li></a>
+  </ul>
+  </section>
+      <!--  right side of footer ^--> 
+  </section>
+  </footer>
+        <!-- end sationary footer -->
+
+
+
+  <footer id="movingfooter" >
+  &#169; <!---html code for copyright-->Grub Station, Inc. All rights reserved
+  </footer>
+
+</body>
+</HTML>
